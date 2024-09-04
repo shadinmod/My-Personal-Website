@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <!-- font assoum -->
+    <script src="https://kit.fontawesome.com/1d1dcf4482.js" crossorigin="anonymous"></script>
 
      <!-- Google Font CDN -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +62,6 @@
                   <li><a>Home</a></li>
                   <li><a>Service</a></li>
                   <li><a>About</a></li>                     
-                  <li><a>Contact</a></li>
                 </ul>
               </div>
               <a class="font-bold text-xl">Shadin Mondol</a>
@@ -70,11 +71,10 @@
                 <li><a>Home</a></li>
                 <li><a>Service</a></li>
                 <li><a>About</a></li>                   
-                <li><a>Contact</a></li>
               </ul>
             </div>
             <div class="">
-              <a class="btn bg-personal-zone text-black">Login</a>
+              <a class="btn bg-personal-zone btn-error text-black"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
             </div>
           </div>
     </nav>
@@ -90,13 +90,17 @@
                <div class="space-y-8 flex-1">
                 <h2 class="text-6xl font-bold">Hi! My Name is Shadin Mondol <br><span class="text-personal-zone">I am a Junior Web Developer</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi, qui ducimus repellat perspiciatis, eveniet vitae rerum cupiditate fugit quasi nostrum! Eveniet atque reprehenderit at eos sint laborum, fugiat iusto.</p>
-                <button class="justify-center btn bg-personal-zone text-black">Hire me</button>
+                <button class="justify-center btn bg-personal-zone btn-error text-black">Hire me</button>
+                <button class="justify-center btn bg-personal-zone btn-error text-black"><i class="fa-duotone fa-solid fa-phone"></i> Contact</button>
                </div>
                <!-- Image Contant -->
                 <div class="flex-1">
-                  <img
+                  <div>
+                    <img
           src="./images/enhanced-image (1).png"
           class="w-[400px]" />
+          
+                  </div>
                 </div>
           </div>
         <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">               
@@ -110,6 +114,173 @@
      <!-- main section -->
 
      <main class="md:container mx-auto">
+
+      <section class="my-12">
+        <div class="items-center text-center mb-12">
+  
+          <h2 class="text-5xl font-bold text-center mb-12">What I Do</h2>
+        <p>I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+      </div>
+         <!-- what i do section -->
+      <div class="grid gap-10 mb-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+       <!-- card 1 -->
+        <div class="card bg-base-100  w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/react.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-3xl text-bold">React</h2>
+            <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+       <!-- card 2 -->
+        <div class="card bg-base-100  w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/js.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-3xl text-bold">Vanilla JavaScript</h2>
+            <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+       <!-- card 3 -->
+        <div class="card bg-base-100  w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/mongo.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-3xl text-bold">MongoDB</h2>
+            <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+       <!-- card 4 -->
+        <div class="card bg-base-100  w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/nodejs.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-3xl text-bold">Node.js</h2>
+            <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Read More</button>
+            </div>
+          </div>
+        </div>          
+      </div>
+      </section>
+
+      <!-- My Education -->
+       <section class="my-12">
+        <h2 class="text-5xl font-bold text-center mb-12">My Education</h2>
+        <!-- cards -->
+         <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- card 1 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Master in Computer Engineering</h2>
+              <h4 class="text-1xl">Harvard University / 2015 - 2017</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Master in Computer Engineering</h2>
+              <h4 class="text-1xl">Harvard University / 2015 - 2017</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Master in Computer Engineering</h2>
+              <h4 class="text-1xl">Harvard University / 2015 - 2017</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Master in Computer Engineering</h2>
+              <h4 class="text-1xl">Harvard University / 2015 - 2017</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+
+         </div>
+
+       </section>
+       <!-- My Experience -->
+        <section class="my-12">
+          <h2 class="text-5xl font-bold text-center mb-12">My Experience</h2>
+          <!-- cards -->
+           <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- card 1 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Sr. Font End Developer</h2>
+              <h4 class="text-1xl">Apple Inc / 2020 - Current</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+            <!-- card 2 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Jr. Font End Developer</h2>
+              <h4 class="text-1xl">Dribbble Inc / 2018 - 2022</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+            <!-- card 3 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">HTML Developer</h2>
+              <h4 class="text-1xl">Adobe Inc / 2017 - 2018</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+            <!-- card 4 -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Sr. Font End Developer</h2>
+              <h4 class="text-1xl">Apple Inc / 2020 - Current</h4>
+              <p>List skill/technologies here. You can change the icon above 
+                to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+            </div>
+          </div>
+          
+           </div>
+           <div class="card-actions justify-center my-12">
+            <button class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
+          </div>
+
+        </section>
+
+
       <!-- client response section -->
       <section class="my-12">
         
@@ -228,6 +399,10 @@
           </div>
          </div>
       </section>
+
+      
+
+      
      </main>
      <!-- Foote Section -->
      <footer class="footer bg-black text-neutral-content p-10">

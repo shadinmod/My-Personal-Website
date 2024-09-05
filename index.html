@@ -113,13 +113,14 @@
 
      <main class="md:container mx-auto">
 
+      <!-- What i do section -->
       <section class="my-12">
         <div class="items-center text-center mb-12">
   
           <h2 class="text-5xl font-bold text-center mb-12"><span class="text-personal-zone">What I Do</span></h2>
         <p class="gap-4 p-10 ">I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
       </div>
-         <!-- what i do section -->
+         <!-- what i do section card -->
       <div class="grid gap-10 mb-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
        <!-- card 1 -->
         <div class="card bg-base-100  w-96 shadow-xl">
@@ -132,7 +133,17 @@
             <h2 class="card-title text-3xl text-bold">React</h2>
             <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-personal-zone btn-error">Read More</button>
+              <!-- You can open the modal using ID.showModal() method -->
+<button class="btn bg-personal-zone btn-error" onclick="my_modal_3.showModal()">Read More</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">React</h3>
+    <p class="py-4">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+  </div>
+</dialog>
             </div>
           </div>
         </div>
@@ -147,7 +158,20 @@
             <h2 class="card-title text-3xl text-bold">Vanilla JavaScript</h2>
             <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-personal-zone btn-error">Read More</button>
+              <!-- Open the modal using ID.showModal() method -->
+               <button class="btn bg-personal-zone btn-error" onclick="my_modal_1.showModal()">Read More</button>
+                 <dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Vanilla JavaScript</h3>
+    <p class="py-4">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+                   </dialog>
             </div>
           </div>
         </div>
@@ -159,10 +183,23 @@
               alt="Shoes" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title text-3xl text-bold">MongoDB</h2>
+            <h2 class="card-title text-3xl text-bold"></h2>
             <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-personal-zone btn-error">Read More</button>
+              <!-- You can open the modal using ID.showModal() method -->
+                <button class="btn bg-personal-zone btn-error" onclick="my_modal_4.showModal()">Read More</button>
+                  <dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">MongoDBo!</h3>
+    <p class="py-4">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+                    </dialog>
             </div>
           </div>
         </div>
@@ -177,7 +214,20 @@
             <h2 class="card-title text-3xl text-bold">Node.js</h2>
             <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-personal-zone btn-error">Read More</button>
+              <!-- Open the modal using ID.showModal() method -->
+                <button class="btn bg-personal-zone btn-error" onclick="my_modal_5.showModal()">Read More</button>
+                  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Node.JS</h3>
+    <p class="py-4">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons avalilable. Aenean commodo ligula eget dolor.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+                   </dialog>
             </div>
           </div>
         </div>          
@@ -229,6 +279,7 @@
          </div>
 
        </section>
+
        <!-- My Experience -->
         <section class="my-12">
           <h2 class="text-5xl font-bold text-center mb-12">My <span class="text-personal-zone">Experience</span></h2>
@@ -397,10 +448,6 @@
           </div>
          </div>
       </section>
-
-      
-
-      
      </main>
 
 
